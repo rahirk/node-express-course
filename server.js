@@ -5,3 +5,15 @@ app.listen(8000,function(){
 	console.log("server is running")
 })
 
+const mockUserData=[
+	{name:'Mark'},
+	{name:'Jill'}
+]
+app.get('/users', function(req,res){
+	res.json({
+		succes: true,
+		message: 'successfully got users. Nice!',
+		users: mockUserData
+	})
+
+})
