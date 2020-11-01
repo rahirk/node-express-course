@@ -17,3 +17,14 @@ app.get('/users', function(req,res){
 	})
 
 })
+
+app.get('/users/:id', function(req,res){
+	console.log(req.params.id)
+	res.json({
+		succes: true,
+		message: 'successfully got users. Nice!',
+		users: req.params.id
+	})
+
+})
+
