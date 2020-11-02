@@ -47,7 +47,7 @@ app.post('/login', function(req,res){
 	} else {
 		res.json({
 			success:false,
-			message:'paddword and username do not match'
+			message:'password and username do not match'
 		})
 	}
 })
